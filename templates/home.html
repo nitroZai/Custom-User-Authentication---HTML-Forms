@@ -1,0 +1,41 @@
+
+{% include 'base.html' %}
+
+<br><br><br>
+
+<div class="container">
+    
+     <a href="/login" class="btn btn-primary"> Login </a>
+</div>
+
+<form action="{% url 'loginn' %}" method="POST" class="container">
+    
+    {% csrf_token %}
+    <br><br>
+
+    Name:
+    <input type="text" class="form-control" name="name" placeholder="enter your name">
+
+    <br><br>
+
+    x:
+    <input type="text" class="form-control" name="x" placeholder="enter your name">
+
+    <br><br>
+    y:
+    <input type="text" class="form-control" name="y" placeholder="enter your name">
+
+    <br><br>
+
+    Password:
+    <input type="text" class="form-control" name="password1">
+
+    <br><br>
+
+    Password Confirm:
+    <input type="text" class="form-control" name="password2">
+
+    <br><br>
+
+    <input type="submit" class="btn btn-primary" value="Register">
+</form>

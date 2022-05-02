@@ -1,0 +1,9 @@
+
+
+Succesffulll Login
+
+<form action="{% url 'home' %}" method="POST" class="container">
+
+    {% csrf_token %}
+    <input type="submit" class="btn btn-primary" value="Logout">
+</form>

@@ -1,0 +1,19 @@
+
+
+
+
+{% include 'base.html' %}
+
+
+<br><br><br>
+<form action="{% url 'loggedin' %}" method="POST" class="container">
+
+    {% csrf_token %}
+
+    Name:
+    <input type="text" class="form-control" name="name">
+
+    Password:
+    <input type="text" class="form-control" name="password">
+    <input type="submit" class="btn btn-primary" value="Login">
+</form>
